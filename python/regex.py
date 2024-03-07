@@ -2,5 +2,9 @@ import re
 
 res = re.search('.', "\n")
 print(res)
+
 res = re.search('^(.*)$', "a\n")
-print(res.groups())
+print(res)
+
+res = re.search('^(.*)$', "a\n\r")
+print(res)
